@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by philippehaffmans on 23-03-17.
  */
-public class Inwoners {
+public class  Inwoners {
     private String naam;
     private int jaar;
     private int aantal;
@@ -36,6 +36,25 @@ public class Inwoners {
         }
         return 000000000;
     }
+
+    public static boolean getNames(String naam){
+        for (Inwoners i : inwonersList){
+            if (i.getNaam().equals(naam)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean getYear(int jaar){
+        for (Inwoners i : inwonersList){
+            if (i.getJaar() == jaar){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
     public Inwoners(String nm, int jr, int an){
         this.naam = nm;
