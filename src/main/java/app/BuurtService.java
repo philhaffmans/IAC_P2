@@ -35,8 +35,6 @@ public class BuurtService {
         }
         return text;
     }
-
-
 }
 
 
